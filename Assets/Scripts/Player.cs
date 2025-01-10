@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
             _playerTransform.Translate(Vector3.right * _speed * Time.deltaTime);
         }
         //Plants a seed if space is pressed, and the number of seeds doesn't equal 0
-        if (Input.GetKey(KeyCode.Space) && _numSeedsLeft != 0)
+        if (Input.GetKeyUp(KeyCode.Space) && _numSeedsLeft != 0)
         {
             PlantSeed();
         }
