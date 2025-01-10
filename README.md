@@ -36,7 +36,9 @@ Prompt: Include the HW1 break-down exercise you wrote during the Week 1 - Lectur
 
 
 Write your Devlog here!
+In order to get the player to move, I utilized the GetKey() function to get the an input from the player, this being the WASD keys, and outputted movement by using _playerTransform.Translate(), allowing the player to move in the direction they are holding. In order to simulate the plant and planting it, I turned the plant into _plantPrefab, used GetKeyUp() to detect an input from the player pressing the Space key, and called the PlantSeed() method. I would instantiate _plantPrefab into a plant GameObject, then used plant.transform.localposition to place the plant in the local position of the player with _playerTransform.localPosition. Afterwards, the amount of seeds (represented by _numSeedsLeft) would decrement, and the number of seeds planted (represented by _numSeedsPlanted) would increment. If the number of seeds is equal to to 0, then the PlantSeed method would no longer activate, preventing me from planting anymore plants.
 
+_plantCountUI was used 
 
 ## Open-Source Assets
 If you added any other outside assets, list them here!
