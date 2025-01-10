@@ -52,6 +52,7 @@ public class Player : MonoBehaviour
     {
         //Instantiates the plant object into the world
         GameObject plant = Instantiate(_plantPrefab);
+        //Places the plant at the position of the player.
         plant.transform.localPosition = _playerTransform.localPosition;
         //Decrements the amount of seeds left
         _numSeedsLeft--;
