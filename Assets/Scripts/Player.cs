@@ -50,7 +50,6 @@ public class Player : MonoBehaviour
 
     public void PlantSeed ()
     {
-        Debug.Log("The plant has been planted!");
         //Instantiates the plant object into the world
         GameObject plant = Instantiate(_plantPrefab);
         plant.transform.localPosition = _playerTransform.localPosition;
